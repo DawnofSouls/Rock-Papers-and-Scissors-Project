@@ -2,7 +2,16 @@ const ROCK = 0;
 const PAPER = 1;
 const SCISSORS = 2;
 
-const playerSelection = prompt("Rock, Paper, or Scissors?")
+const RPS = ["ROCK", "PAPER", "SCISSORS"];
+const computerRandom = Math.floor(Math.random() * RPS.length);
 
-console.log(playerSelection.toUpperCase())
+
+
+let computerSelection = RPS[computerRandom]
+
+console.log(computerSelection)
+
+const playerSelection = prompt("Rock, Paper, or Scissors?");
+console.log(playerSelection.toUpperCase());
+
 
