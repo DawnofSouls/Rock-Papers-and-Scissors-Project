@@ -15,5 +15,18 @@ let playerSelection = (playerPrompt.toUpperCase());
 console.log(playerSelection);
 
 
+    if ( (playerSelection === ("ROCK" || "PAPER") ) && (computerSelection === ("SCISSORS" || "ROCK")) ) {
+        alert("You won this round!");
+    }   else if ( (playerSelection === ("SCISSORS" || "ROCK")) && (computerSelection === ("ROCK" ||"PAPER") ) ) {
+            alert("The machine won this round!"); 
+        }   else if ( playerSelection > computerSelection) {
+                alert ("You won this round!")
+            }   else if (playerSelection === computerSelection){
+                    alert ("You both are tied!");
+                }       else{
+                        alert ("The machine won this round!");
+                    }          
+   
+
 
 
