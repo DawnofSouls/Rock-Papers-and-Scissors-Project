@@ -17,30 +17,33 @@ let playerSelection = (playerPrompt.toUpperCase());
 console.log(playerSelection);
 
 
-    if ( (playerSelection === ("ROCK") ) && (computerSelection === ("SCISSORS")) ) {
-        alert("You won this round!");
-    }       
-    else if ( (playerSelection === "PAPER") && (computerSelection === "ROCK") ) {
-        alert ("You won this round!");
-    }   
-    else if ( (playerSelection === "SCISSORS") && (computerSelection === "ROCK") ) {
-        alert ("The machine won this round!");
-    }   
-    else if ( (playerSelection === "ROCK") && (computerSelection === "PAPER") ) {
-        alert ("The machine won this round!");
-    }   
-    else if ( playerSelection > computerSelection) {
-        alert ("You won this round!")
-    }   
-    else if (playerSelection === computerSelection){
-        alert ("You both are tied!");
-    }   
-    else{
-        alert ("The machine won this round!");
-    }  
-                                           
    
 
+for (let i = 0; i < 5; i++) {
+
+        if ( (playerSelection === ("ROCK") ) && (computerSelection === ("SCISSORS")) ) {
+                alert("You won this round!");
+            }       
+            else if ( (playerSelection === "PAPER") && (computerSelection === "ROCK") ) {
+                alert ("You won this round!");
+            }   
+            else if ( (playerSelection === "SCISSORS") && (computerSelection === "ROCK") ) {
+                alert ("The machine won this round!");
+            }   
+            else if ( (playerSelection === "ROCK") && (computerSelection === "PAPER") ) {
+                alert ("The machine won this round!");
+            }   
+            else if ( playerSelection > computerSelection) {
+                alert ("You won this round!")
+            }   
+            else if (playerSelection === computerSelection){
+                alert ("You both are tied!");
+            }   
+            else{
+                alert ("The machine won this round!");
+            }  
+                                                
+        }
 
 
 /* (if ( playerSelection > computerSelection) {
