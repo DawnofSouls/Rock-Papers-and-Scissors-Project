@@ -43,9 +43,12 @@ for (let i = 0; i < 5; i++) {
                 alert ("You won this round!") , player++ ;
             }   
             else if (playerSelection === computerSelection){
-                alert ("You both are tied!");
+                alert ("You both are tied!") ;
             }   
-            else{
+            else if (playerSelection === ("")) {
+                alert("What are you doing? The machines are advancing! The machine won this round!"), computer++;
+            }
+            else {
                 alert ("The machine won this round!") , computer++;
             }  
                                                 
