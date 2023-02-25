@@ -14,13 +14,13 @@ for (let i = 0; i < 5; i++) {
     const computerRandom = Math.floor(Math.random() * RPS.length);
     
     let computerSelection = RPS[computerRandom]
-    console.log(computerSelection)
+   // console.log(computerSelection)
     
     
     
     const playerPrompt = prompt("Rock, Paper, or Scissors?");
     let playerSelection = (playerPrompt.toUpperCase());
-    console.log(playerSelection);
+    // console.log(playerSelection);
     
 
 
