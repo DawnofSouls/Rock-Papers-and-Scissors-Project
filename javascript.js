@@ -9,8 +9,6 @@ function removeFadeOut( el, speed ) {
     }, speed);
 }
 
-//removeFadeOut(document.getElementById('FadeOutScreen'), 5000);
-
 setTimeout(() => {
     removeFadeOut(document.getElementById('FadeOutScreen'), 2000);
   }, 5000)
