@@ -1,3 +1,30 @@
+
+function removeFadeOut( el, speed ) {
+    let seconds = speed/1000;
+    el.style.transition = "opacity "+seconds+"s ease";
+
+    el.style.opacity = 0;
+    setTimeout(function() {
+        el.parentNode.removeChild(el);
+    }, speed);
+}
+
+//removeFadeOut(document.getElementById('FadeOutScreen'), 5000);
+
+setTimeout(() => {
+    removeFadeOut(document.getElementById('FadeOutScreen'), 2000);
+  }, 5000)
+
+
+
+
+
+
+
+
+
+
+
 /* const ROCK = 0;
 const PAPER = 1;
 const SCISSORS = 2;
