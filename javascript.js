@@ -1,4 +1,8 @@
 
+
+
+
+
 function removeFadeOut( el, speed ) {
     let seconds = speed/1000;
     el.style.transition = "opacity "+seconds+"s ease";
@@ -13,6 +17,30 @@ setTimeout(() => {
     removeFadeOut(document.getElementById('FadeOutScreen'), 2000);
   }, 5000)
 
+
+let player = '';
+let computer = '';
+
+const Rock = document.querySelector('Rock')
+const Paper = document.querySelector('Paper')
+const Scissors = document.querySelector('Scissors')
+
+
+Rock.addEventListener("click", () => {
+    player = "Rock";
+    console.log(player);
+
+});
+
+Paper.addEventListener("click", () => {
+    player = "Paper";
+    console.log(player);
+});
+
+Scissors.addEventListener("click", () => {
+    player = "Scissors";
+    console.log(player);
+});
 
 
 
