@@ -21,9 +21,9 @@ setTimeout(() => {
 let player = '';
 let computer = '';
 
-const Rock = document.querySelector('Rock')
-const Paper = document.querySelector('Paper')
-const Scissors = document.querySelector('Scissors')
+const Rock = document.getElementById('Rock')
+const Paper = document.getElementById('Paper')
+const Scissors = document.getElementById('Scissors')
 
 
 Rock.addEventListener("click", () => {
