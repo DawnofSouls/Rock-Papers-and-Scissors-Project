@@ -21,8 +21,12 @@ setTimeout(() => {
 
 
 let playerSelection = '';
-let computer = '';
+let computerSelection = '';
 
+let playerScore = '';
+let computerScore = '';
+
+let computerRandomSel = '';
 
 
 
@@ -59,33 +63,30 @@ for (let i = 0; i < 5; i++) {
 
     switch (computerRandom) {
         case 0 :
-            computer = "Rock";
+            computerRandomSel = "Rock";
             break;
         case 1 :
-            computer = "Paper";
+            computerRandomSel = "Paper";
             break; 
         case 2 :
-            computer = "Scissors";
+            computerRandomSel = "Scissors";
             break;
 
     }
 
     
-    let computerSelection = RPS[computerRandom]
-   // console.log(computerSelection)
+    let computerSelection = computerRandomSel
+    console.log(computerSelection)
     
     
     
-    const playerPrompt = prompt("Rock, Paper, or Scissors?");
-    let playerSelection = (playerPrompt.toUpperCase());
-    // console.log(playerSelection);
-    
 
 
 
 
 
-        if ( ( (playerSelection === ("ROCK") ) && (computerSelection === ("SCISSORS") ) ) || ( (playerSelection === "PAPER") && (computerSelection === "ROCK") ) ) {
+
+        /* if ( ( (playerSelection === ("ROCK") ) && (computerSelection === ("SCISSORS") ) ) || ( (playerSelection === "PAPER") && (computerSelection === "ROCK") ) ) {
                 alert("You won this round!") , player++;
             }       
             else if ( ( (playerSelection === "SCISSORS") && (computerSelection === "ROCK") ) || ( (playerSelection === "ROCK") && (computerSelection === "PAPER") ) ) {
@@ -106,7 +107,7 @@ for (let i = 0; i < 5; i++) {
             else {
                 alert ("The machine won this round!") , computer++;
             }  
-                                                
+               */                                 
         }
 
 let finalScore = (player > computer) ? alert("You have successfully defeated the machine!") : alert("The machine has defeated the player. GAME OVER");
