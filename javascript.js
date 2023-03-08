@@ -20,8 +20,11 @@ setTimeout(() => {
   }, 5000)
 
 
-let player = '';
+let playerSelection = '';
 let computer = '';
+
+
+
 
 
 const Rock = document.getElementById('Rock')
@@ -30,19 +33,19 @@ const Scissors = document.getElementById('Scissors')
 
 
 Rock.addEventListener("click", () => {
-    player = "Rock";
-    console.log(player);
+    playerSelection = "Rock";
+    console.log(playerSelection);
 
 });
 
 Paper.addEventListener("click", () => {
-    player = "Paper";
-    console.log(player);
+    playerSelection = "Paper";
+    console.log(playerSelection);
 });
 
 Scissors.addEventListener("click", () => {
-    player = "Scissors";
-    console.log(player);
+    playerSelection = "Scissors";
+    console.log(playerSelection);
 });
 
 
