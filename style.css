@@ -3,9 +3,7 @@
   src: url(assets/fonts/Year-Is-199X.woff);
 }
 
-
 * {
-  /*height: 100%; */
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
@@ -16,15 +14,11 @@ body {
   height: 100%;
   }
   
-
 #FadeOutScreen {
   position: relative;
-
   height: 100%;
   background-color: black;
   z-index: 20;
-  
-   
   }
 .imgbox  {
   position:relative;
@@ -36,33 +30,14 @@ body {
   
 .imgbox ,
 .center-fit ,
-.Starman{
-     
+.Starman{ 
   position:absolute;
   top:0;
   left:0;
   right:0;
-  bottom:0;
-
-
-     
-  /*  max-height: 100%; max-width: 100%; */
-     
+  bottom:0;   
   }
 
-.buttons
- {
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-}
-
-.ButtonSelect {
-  position:relative;
-  z-index: 2;
-}
 
 .center-fit {
   width: auto%;
@@ -82,11 +57,19 @@ body {
   align-content: flex-end;
   align-items: flex-end;
   margin-bottom: 5%;
-  
-  
+}
 
+.buttons {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
 
- 
+.ButtonSelect {
+  position:relative;
+  z-index: 2;
 }
 
 button {
