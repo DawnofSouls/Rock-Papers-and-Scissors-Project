@@ -16,13 +16,14 @@ body {
   height: 100%;
   }
   
+
 #FadeOutScreen {
   height: 100%;
   background-color: black;
   
    
   }
-.imgbox {
+.imgbox  {
   position:relative;
   height: 100%;
   width:100%;
@@ -32,18 +33,30 @@ body {
   
 .imgbox ,
 .center-fit ,
-.Starman ,
-.buttons{
+.Starman{
      
   position:absolute;
   top:0;
   left:0;
   right:0;
   bottom:0;
+
+
      
   /*  max-height: 100%; max-width: 100%; */
      
   }
+
+.buttons
+ {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  
+
+}
 
 .center-fit {
   width: auto%;
@@ -74,7 +87,7 @@ button {
   border-radius: 0px;
   background-image: url(assets/images/Checkerboard.gif);
   background-size: 1378px 1275px;
-
+  
  
 
   padding: 7px 88px;
