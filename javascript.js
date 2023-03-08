@@ -49,25 +49,24 @@ Scissors.addEventListener("click", () => {
 
 
 
-
-
-
-
-
-/* const ROCK = 0;
-const PAPER = 1;
-const SCISSORS = 2;
-let player = 0;
-let computer = 0;
-
-
-
-   
-
 for (let i = 0; i < 5; i++) {
 
     const RPS = ["ROCK", "PAPER", "SCISSORS"];
     const computerRandom = Math.floor(Math.random() * RPS.length);
+
+    switch (computerRandom) {
+        case 0 :
+            computer = "Rock";
+            break;
+        case 1 :
+            computer = "Paper";
+            break; 
+        case 2 :
+            computer = "Scissors";
+            break;
+
+    }
+
     
     let computerSelection = RPS[computerRandom]
    // console.log(computerSelection)
