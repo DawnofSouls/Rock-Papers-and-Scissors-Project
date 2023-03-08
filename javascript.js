@@ -1,3 +1,5 @@
+const Buttons = document.querySelectorAll("button.ButtonSelect");
+
 function removeFadeOut( el, speed ) {
     let seconds = speed/1000;
     el.style.transition = "opacity "+seconds+"s ease";
@@ -10,6 +12,11 @@ function removeFadeOut( el, speed ) {
 
 setTimeout(() => {
     removeFadeOut(document.getElementById('FadeOutScreen'), 2000);
+    
+   for (let i = 0; i < Buttons.length; i++){
+    Buttons[i].removeAttribute("disabled");
+   }
+
   }, 5000)
 
 
