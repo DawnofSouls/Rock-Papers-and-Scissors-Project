@@ -19,6 +19,7 @@ setTimeout(() => {
   }, 5000)
 
 const Buttons = document.querySelectorAll("button.ButtonSelect");
+const buttonDiv = document.getElementsByClassName("buttons");
 
 let playerSelection = '';
 let computerSelection = '';
@@ -28,7 +29,17 @@ let computerScore = 0;
 
 let computerRandomSel = '';
 
-let Play
+let Round = 1;
+let playRound = () => {
+    if (Round >= 5) {
+       
+        Buttons.forEach (el => el.remove());
+
+    } else {
+        Round++;
+        console.log(Round);
+    };
+};
 
 // Everytime a button clicks, make sure it increments a round value and checks the if statement
 // you beat the machine or not
@@ -39,12 +50,32 @@ const Rock = document.getElementById('Rock')
 const Paper = document.getElementById('Paper')
 const Scissors = document.getElementById('Scissors')
 
+Rock.addEventListener("click", () => {
+    playerSelection = "Rock";
+    console.log(playerSelection);
+    playRound();
+
+});
+
+Paper.addEventListener("click", () => {
+    playerSelection = "Paper";
+    console.log(playerSelection);
+    playRound();
+
+});
+
+Scissors.addEventListener("click", () => {
+    playerSelection = "Scissors";
+    console.log(playerSelection);
+    playRound();
+
+});
 
 
 
 
 
-for (let i = 0; i < 5; i++) {
+ /* for (let i = 0; i < 5; i++) {
 
     const RPS = ["ROCK", "PAPER", "SCISSORS"];
     const computerRandom = Math.floor(Math.random() * RPS.length);
@@ -64,22 +95,7 @@ for (let i = 0; i < 5; i++) {
 
     // issue Im dealing with below 
 
-    Rock.addEventListener("click", () => {
-        playerSelection = "Rock";
-        console.log(playerSelection);
-    
-    });
-    
-    Paper.addEventListener("click", () => {
-        playerSelection = "Paper";
-        console.log(playerSelection);
-    });
-    
-    Scissors.addEventListener("click", () => {
-        playerSelection = "Scissors";
-        console.log(playerSelection);
-    });
-    
+
     // issue Im dealing with above 
 
     if ( ( (playerSelection === ("Rock") ) && (computerSelection === ("Scissors") ) ) || ( (playerSelection === "Paper") && (computerSelection === "Rock") ) || ((playerSelection === "Scissors") && (computerSelection === "Paper")  ) ) {
@@ -96,3 +112,4 @@ for (let i = 0; i < 5; i++) {
 let finalScore = (playerScore > computerScore) ? alert("You have successfully defeated the machine!") : alert("The machine has defeated the player. GAME OVER");
 
 
+*/
