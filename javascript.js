@@ -41,42 +41,7 @@ let playRound = () => {
     };
 };
 
-// Everytime a button clicks, make sure it increments a round value and checks the if statement
-// you beat the machine or not
-
-
-
-const Rock = document.getElementById('Rock')
-const Paper = document.getElementById('Paper')
-const Scissors = document.getElementById('Scissors')
-
-Rock.addEventListener("click", () => {
-    playerSelection = "Rock";
-    console.log(playerSelection);
-    playRound();
-
-});
-
-Paper.addEventListener("click", () => {
-    playerSelection = "Paper";
-    console.log(playerSelection);
-    playRound();
-
-});
-
-Scissors.addEventListener("click", () => {
-    playerSelection = "Scissors";
-    console.log(playerSelection);
-    playRound();
-
-});
-
-
-
-
-
- /* for (let i = 0; i < 5; i++) {
-
+let RandomRPS = () => {
     const RPS = ["ROCK", "PAPER", "SCISSORS"];
     const computerRandom = Math.floor(Math.random() * RPS.length);
 
@@ -92,6 +57,49 @@ Scissors.addEventListener("click", () => {
             break;
 
     }
+    console.log(computerRandomSel);
+};
+
+// Everytime a button clicks, make sure it increments a round value and checks the if statement
+// you beat the machine or not
+
+
+
+const Rock = document.getElementById('Rock')
+const Paper = document.getElementById('Paper')
+const Scissors = document.getElementById('Scissors')
+
+Rock.addEventListener("click", () => {
+    playerSelection = "Rock";
+    console.log(playerSelection);
+    playRound();
+    RandomRPS();
+
+});
+
+Paper.addEventListener("click", () => {
+    playerSelection = "Paper";
+    console.log(playerSelection);
+    playRound();
+    RandomRPS();
+
+});
+
+Scissors.addEventListener("click", () => {
+    playerSelection = "Scissors";
+    console.log(playerSelection);
+    playRound();
+    RandomRPS();
+
+});
+
+
+
+
+
+ /* for (let i = 0; i < 5; i++) {
+
+    
 
     // issue Im dealing with below 
 
