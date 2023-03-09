@@ -58,7 +58,7 @@ Scissors.addEventListener("click", () => {
 
 for (let i = 0; i < 5; i++) {
 
-    const RPS = ["ROCK", "PAPER", "SCISSORS"];
+    const git = ["ROCK", "PAPER", "SCISSORS"];
     const computerRandom = Math.floor(Math.random() * RPS.length);
 
     switch (computerRandom) {
@@ -101,32 +101,3 @@ for (let i = 0; i < 5; i++) {
 let finalScore = (playerScore > computerScore) ? alert("You have successfully defeated the machine!") : alert("The machine has defeated the player. GAME OVER");
 
 
-/* (if ( playerSelection > computerSelection) {
-    alert("You won this round!");
-    } else if ( playerSelection === computerSelection ) {
-        alert ("You both are tied!")
-    } else {
-        alert ("The Machine won this round!")
-    }
-*/
-/*   else if ( playerSelection > computerSelection) {
-    alert("You won this round!");
-    }   else if ( playerSelection === computerSelection ) {
-        alert ("You both are tied!")
-    }   else {
-        alert ("The Machine won this round!")
-    }
-
-*/
-
-
-/* ( (playerSelection === ("SCISSORS" || "ROCK")) && (computerSelection === ("ROCK" ||"PAPER") ) ) {
-            alert("The machine won this round!"); 
-        }   else if ( playerSelection > computerSelection) {
-                alert ("You won this round!")
-            }   else if (playerSelection === computerSelection){
-                    alert ("You both are tied!");
-                }       else{
-                        alert ("The machine won this round!");
-                    }          
-                    */
