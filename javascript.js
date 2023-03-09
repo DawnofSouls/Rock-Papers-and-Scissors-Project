@@ -23,8 +23,8 @@ setTimeout(() => {
 let playerSelection = '';
 let computerSelection = '';
 
-let playerScore = '';
-let computerScore = '';
+let playerScore = 0;
+let computerScore = 0;
 
 let computerRandomSel = '';
 
@@ -86,31 +86,19 @@ for (let i = 0; i < 5; i++) {
 
 
 
-        /* if ( ( (playerSelection === ("ROCK") ) && (computerSelection === ("SCISSORS") ) ) || ( (playerSelection === "PAPER") && (computerSelection === "ROCK") ) ) {
-                alert("You won this round!") , player++;
+         if ( ( (playerSelection === ("Rock") ) && (computerSelection === ("Scissors") ) ) || ( (playerSelection === "Paper") && (computerSelection === "Rock") ) || ((playerSelection === "Scissors") && (computerSelection === "Paper")  ) ) {
+                alert("You won this round!") , playerScore++;
             }       
-            else if ( ( (playerSelection === "SCISSORS") && (computerSelection === "ROCK") ) || ( (playerSelection === "ROCK") && (computerSelection === "PAPER") ) ) {
-                alert ("The machine won this round!") , computer++;
-            }   
-            else if ( (playerSelection === "ROCK") && (computerSelection === "PAPER") ) {
-                alert ("The machine won this round!") , computer++;
-            }   
-            else if ( playerSelection > computerSelection) {
-                alert ("You won this round!") , player++ ;
-            }   
             else if (playerSelection === computerSelection){
                 alert ("You both are tied!") ;
             }   
-            else if (playerSelection === ("")) {
-                alert("What are you doing? The machines are advancing! The machine won this round!"), computer++;
-            }
             else {
-                alert ("The machine won this round!") , computer++;
+                alert ("The machine won this round!") , computerScore++;
             }  
-               */                                 
+                                             
         }
 
-let finalScore = (player > computer) ? alert("You have successfully defeated the machine!") : alert("The machine has defeated the player. GAME OVER");
+let finalScore = (playerScore > computerScore) ? alert("You have successfully defeated the machine!") : alert("The machine has defeated the player. GAME OVER");
 
 
 /* (if ( playerSelection > computerSelection) {
