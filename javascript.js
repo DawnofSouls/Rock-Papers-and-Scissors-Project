@@ -37,7 +37,7 @@ let playRound = () => {
 
     } else {
         Round++;
-        console.log(Round);
+        console.log(`Round ${Round}!`);
     };
 };
 
@@ -57,13 +57,13 @@ let RandomRPS = () => {
             break;
 
     }
-    console.log(computerRandomSel);
+    console.log(`Computer choose ${computerRandomSel}!`);
 };
 
 // Everytime a button clicks, make sure it increments a round value and checks the if statement
 // you beat the machine or not
 
-
+console.log("Round 1!")
 
 const Rock = document.getElementById('Rock')
 const Paper = document.getElementById('Paper')
@@ -71,7 +71,7 @@ const Scissors = document.getElementById('Scissors')
 
 Rock.addEventListener("click", () => {
     playerSelection = "Rock";
-    console.log(playerSelection);
+    console.log(`Player choose ${playerSelection}!`);
     playRound();
     RandomRPS();
 
@@ -79,7 +79,7 @@ Rock.addEventListener("click", () => {
 
 Paper.addEventListener("click", () => {
     playerSelection = "Paper";
-    console.log(playerSelection);
+    console.log(`Player choose ${playerSelection}!`);
     playRound();
     RandomRPS();
 
@@ -87,7 +87,7 @@ Paper.addEventListener("click", () => {
 
 Scissors.addEventListener("click", () => {
     playerSelection = "Scissors";
-    console.log(playerSelection);
+    console.log(`Player choose ${playerSelection}!`);
     playRound();
     RandomRPS();
 
