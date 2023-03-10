@@ -21,6 +21,11 @@ setTimeout(() => {
 const Buttons = document.querySelectorAll("button.ButtonSelect");
 const buttonDiv = document.getElementsByClassName("buttons");
 
+let HumanScore = document.getElementsByClassName("HumanScore");
+let StarmanScore = document.getElementsByClassName("StarmanScore");
+
+
+
 let playerSelection = '';
 let computerSelection = '';
 
@@ -30,6 +35,7 @@ let computerScore = 0;
 let computerRandomSel = '';
 
 let Round = 0;
+
 let playRound = () => {
     if (Round >= 4) {
         Round++;
@@ -78,9 +84,16 @@ let rpsCondition = () => {
     }
 };
 
-// Everytime a button clicks, make sure it increments a round value and checks the if statement
-// you beat the machine or not
+// Increment a score value by one every round via text content
 
+
+let changeScore = () => {
+
+   
+    HumanScore.textContent = `Human: ${playerScore}`;
+    StarmanScore.textContent = `Starman: ${computerScore}`;
+
+}
 
 const Rock = document.getElementById('Rock')
 const Paper = document.getElementById('Paper')
@@ -91,6 +104,7 @@ Rock.addEventListener("click", () => {
     playRound();
     console.log(`Player choose ${playerSelection}!`);
     RandomRPS();
+    changeScore();
 
 });
 
@@ -99,6 +113,8 @@ Paper.addEventListener("click", () => {
     playRound();
     console.log(`Player choose ${playerSelection}!`);
     RandomRPS();
+    changeScore();
+
 
 });
 
@@ -107,6 +123,8 @@ Scissors.addEventListener("click", () => {
     playRound();
     console.log(`Player choose ${playerSelection}!`);
     RandomRPS();
+    changeScore();
+
 
 });
 
