@@ -61,6 +61,23 @@ let RandomRPS = () => {
     console.log(`Computer choose ${computerRandomSel}!`);
 };
 
+
+
+let rpsCondition = () => {
+    
+    if ( ( (playerSelection === ("Rock") ) && (computerSelection === ("Scissors") ) ) || ( (playerSelection === "Paper") && (computerSelection === "Rock") ) || ((playerSelection === "Scissors") && (computerSelection === "Paper")  ) ) {
+        alert("You won this round!") , playerScore++;
+    }       
+    else if (playerSelection === computerSelection){
+        alert ("You both are tied!") ;
+    }   
+    else {
+        alert ("The machine won this round!") , computerScore++;
+    ;
+
+    }
+};
+
 // Everytime a button clicks, make sure it increments a round value and checks the if statement
 // you beat the machine or not
 
@@ -97,27 +114,9 @@ Scissors.addEventListener("click", () => {
 
 
 
- /* for (let i = 0; i < 5; i++) {
 
-    
+  
 
-    // issue Im dealing with below 
-
-
-    // issue Im dealing with above 
-
-    if ( ( (playerSelection === ("Rock") ) && (computerSelection === ("Scissors") ) ) || ( (playerSelection === "Paper") && (computerSelection === "Rock") ) || ((playerSelection === "Scissors") && (computerSelection === "Paper")  ) ) {
-                alert("You won this round!") , playerScore++;
-        }       
-        else if (playerSelection === computerSelection){
-                alert ("You both are tied!") ;
-        }   
-        else {
-                alert ("The machine won this round!") , computerScore++;
-        }
-    }
-
-let finalScore = (playerScore > computerScore) ? alert("You have successfully defeated the machine!") : alert("The machine has defeated the player. GAME OVER");
+// let finalScore = (playerScore > computerScore) ? alert("You have successfully defeated the machine!") : alert("The machine has defeated the player. GAME OVER");
 
 
-*/
