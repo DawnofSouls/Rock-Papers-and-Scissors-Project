@@ -92,3 +92,23 @@ button {
   
 }
 
+
+#Scoreboard {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
+.Score {
+  position:relative;
+  z-index: 11;
+}
+
+.Score {
+  color:azure;
+  font-size: 100px;
+  font-family: "Earthbound", sans-serif;
+  margin:20px 2px -29px 50px;
+}
