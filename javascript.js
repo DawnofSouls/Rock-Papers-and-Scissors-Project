@@ -23,13 +23,56 @@ const buttonDiv = document.getElementsByClassName("buttons");
 
 let HumanScore = document.getElementById("HumanScore");
 let StarmanScore = document.getElementById("StarmanScore");
+let StarmanPNG = document.getElementById("StarmanPNG");
+
 
 
 const Rock = document.getElementById('Rock')
 const Paper = document.getElementById('Paper')
 const Scissors = document.getElementById('Scissors')
 
+let HumanScoreShake = () => {
+    HumanScore.classList.add("shake" , "shake-constant");
+    HumanScore.style.color="red";   
+    Buttons.forEach( (element) => {
+        element.classList.add("shake" , "shake-constant");
+    });
 
+    setTimeout ( () => {
+        HumanScore.classList.remove("shake" , "shake-constant");
+        HumanScore.style.color="azure";
+        Buttons.forEach( (element) => {
+            element.classList.remove("shake" , "shake-constant");
+        });
+    
+    }, 500)
+   
+
+};
+
+let StarmanScoreShake = () => {
+    StarmanScore.classList.add("shake" , "shake-constant");
+    StarmanPNG.classList.add("shake" , "shake-constant");
+    StarmanScore.style.color="red";  
+
+    setTimeout ( () => {
+        StarmanScore.classList.remove("shake" , "shake-constant");
+        StarmanPNG.classList.remove("shake" , "shake-constant");
+        StarmanScore.style.color="azure";
+    }, 500)
+};
+
+let ShakeifEqual = () => {
+
+    HumanScore.style.color="rgb(102, 204, 255)";   
+    StarmanScore.style.color="rgb(102, 204, 255)";  
+
+    setTimeout ( () => {
+        StarmanScore.style.color="azure";
+        HumanScore.style.color="azure";
+    }, 500)
+
+};
 
 let playerSelection = '';
 let computerSelection = '';
@@ -80,13 +123,17 @@ let rpsCondition = () => {
     if ( ( playerSelection === "Rock"  && computerSelection === "Scissors"  ) || ( playerSelection === "Paper" && computerSelection === "Rock" ) || ( playerSelection === "Scissors" && computerSelection === "Paper" ) ) {
         //alert("You won this round!");
         playerScore++;
+        StarmanScoreShake();
+        
     }       
     else if (playerSelection === computerSelection){
         //alert ("You both are tied!");
+        ShakeifEqual();
     }   
     else {
         //alert ("The machine won this round!"); 
         computerScore++;
+        HumanScoreShake();
     
 
     }
