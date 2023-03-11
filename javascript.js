@@ -21,8 +21,13 @@ setTimeout(() => {
 const Buttons = document.querySelectorAll("button.ButtonSelect");
 const buttonDiv = document.getElementsByClassName("buttons");
 
-let HumanScore = document.getElementsByClassName("HumanScore");
-let StarmanScore = document.getElementsByClassName("StarmanScore");
+let HumanScore = document.getElementById("HumanScore");
+let StarmanScore = document.getElementById("StarmanScore");
+
+
+const Rock = document.getElementById('Rock')
+const Paper = document.getElementById('Paper')
+const Scissors = document.getElementById('Scissors')
 
 
 
@@ -71,15 +76,17 @@ let RandomRPS = () => {
 
 let rpsCondition = () => {
     
-    if ( ( (playerSelection === ("Rock") ) && (computerSelection === ("Scissors") ) ) || ( (playerSelection === "Paper") && (computerSelection === "Rock") ) || ((playerSelection === "Scissors") && (computerSelection === "Paper")  ) ) {
-        alert("You won this round!") , playerScore++;
+    if ( ( playerSelection === "Rock"  && computerSelection === "Scissors"  ) || ( playerSelection === "Paper" && computerSelection === "Rock" ) || ( playerSelection === "Scissors" && computerSelection === "Paper" ) ) {
+        //alert("You won this round!");
+        playerScore++;
     }       
     else if (playerSelection === computerSelection){
-        alert ("You both are tied!") ;
+        //alert ("You both are tied!");
     }   
     else {
-        alert ("The machine won this round!") , computerScore++;
-    ;
+        //alert ("The machine won this round!"); 
+        computerScore++;
+    
 
     }
 };
@@ -95,15 +102,14 @@ let changeScore = () => {
 
 }
 
-const Rock = document.getElementById('Rock')
-const Paper = document.getElementById('Paper')
-const Scissors = document.getElementById('Scissors')
+
 
 Rock.addEventListener("click", () => {
     playerSelection = "Rock";
     playRound();
     console.log(`Player choose ${playerSelection}!`);
     RandomRPS();
+    rpsCondition();
     changeScore();
 
 });
@@ -113,6 +119,8 @@ Paper.addEventListener("click", () => {
     playRound();
     console.log(`Player choose ${playerSelection}!`);
     RandomRPS();
+    rpsCondition();
+
     changeScore();
 
 
@@ -123,6 +131,8 @@ Scissors.addEventListener("click", () => {
     playRound();
     console.log(`Player choose ${playerSelection}!`);
     RandomRPS();
+    rpsCondition();
+
     changeScore();
 
 
