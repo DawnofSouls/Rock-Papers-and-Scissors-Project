@@ -42,7 +42,7 @@ let computerRandomSel = '';
 let Round = 0;
 
 let playRound = () => {
-    if (Round >= 4) {
+    if (Round >= 9) {
         Round++;
         console.log(`Round ${Round}!`);
         Buttons.forEach (el => el.remove());
@@ -69,6 +69,7 @@ let RandomRPS = () => {
             break;
 
     }
+    computerSelection = computerRandomSel;
     console.log(`Computer choose ${computerRandomSel}!`);
 };
 
@@ -120,7 +121,6 @@ Paper.addEventListener("click", () => {
     console.log(`Player choose ${playerSelection}!`);
     RandomRPS();
     rpsCondition();
-
     changeScore();
 
 
@@ -132,7 +132,6 @@ Scissors.addEventListener("click", () => {
     console.log(`Player choose ${playerSelection}!`);
     RandomRPS();
     rpsCondition();
-
     changeScore();
 
 
