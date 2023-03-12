@@ -83,6 +83,7 @@ let ScreenDamagePoint = () => {
 let finalScore = () => {
   if (playerScore > computerScore) {
     document.getElementById("StarmanPNG").src = "assets/images/explosion.gif";
+    document.getElementById("StarmanPNG").style = "mix-blend-mode: screen";
   } else {
     alert("You lose");
   }
