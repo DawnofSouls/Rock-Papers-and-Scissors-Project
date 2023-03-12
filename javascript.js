@@ -35,14 +35,15 @@ let HumanScoreShake = () => {
   Buttons.forEach((element) => {
     element.classList.add("shake", "shake-constant");
   });
-
+  setTimeout(() => {
+    ScreenDamage.removeAttribute("style");
+  }, 200);
   setTimeout(() => {
     HumanScore.classList.remove("shake", "shake-constant");
     HumanScore.style.color = "azure";
     Buttons.forEach((element) => {
       element.classList.remove("shake", "shake-constant");
     });
-    ScreenDamage.removeAttribute("style");
   }, 500);
 };
 
@@ -79,6 +80,14 @@ let ScreenDamagePoint = () => {
   ScreenDamage.style = ScreenDamageStyle;
 };
 
+let finalScore = () => {
+  if (playerScore > computerScore) {
+    document.getElementById("StarmanPNG").src = "assets/images/explosion.gif";
+  } else {
+    alert("You lose");
+  }
+};
+
 let playerSelection = "";
 let computerSelection = "";
 
@@ -94,6 +103,7 @@ let playRound = () => {
     Round++;
     console.log(`Round ${Round}!`);
     Buttons.forEach((el) => el.remove());
+    finalScore();
   } else {
     Round++;
     console.log(`Round ${Round}!`);
@@ -171,5 +181,3 @@ Scissors.addEventListener("click", () => {
   rpsCondition();
   changeScore();
 });
-
-// let finalScore = (playerScore > computerScore) ? alert("You have successfully defeated the machine!") : alert("The machine has defeated the player. GAME OVER");
