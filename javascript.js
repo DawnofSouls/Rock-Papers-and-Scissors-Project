@@ -82,7 +82,7 @@ let ScreenDamagePoint = () => {
 let BackgroundStyleText = `
 background-image: url(/assets/images/You_lost.svg);
 background-repeat: repeat;
-  background-position:0% 0%, 40px 40px;
+  background-position:0% 0%, 40px px;
   background-size:80px;
   min-height:100vh;
 `;
@@ -99,6 +99,11 @@ let finalScore = () => {
       child = bodyelement.lastElementChild;
     }
     document.querySelector("body").style = BackgroundStyleText;
+    setTimeout(() => {
+      document
+        .querySelector("body")
+        .setAttribute("onclick", "window.location.reload()");
+    }, 5000);
   }
 };
 
