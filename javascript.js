@@ -79,6 +79,13 @@ let ScreenDamageStyle = `
 let ScreenDamagePoint = () => {
   ScreenDamage.style = ScreenDamageStyle;
 };
+let BackgroundStyleText = `
+background-image: url(/assets/images/You_lost.svg);
+background-repeat: repeat;
+  background-position:0% 0%, 40px 40px;
+  background-size:80px;
+  min-height:100vh;
+`;
 
 let finalScore = () => {
   if (playerScore > computerScore) {
@@ -91,6 +98,7 @@ let finalScore = () => {
       bodyelement.removeChild(child);
       child = bodyelement.lastElementChild;
     }
+    document.querySelector("body").style = BackgroundStyleText;
   }
 };
 
