@@ -85,7 +85,12 @@ let finalScore = () => {
     document.getElementById("StarmanPNG").src = "assets/images/explosion.gif";
     document.getElementById("StarmanPNG").style = "mix-blend-mode: screen";
   } else {
-    alert("You lose");
+    let bodyelement = document.querySelector("body");
+    let child = bodyelement.lastElementChild;
+    while (child) {
+      bodyelement.removeChild(child);
+      child = bodyelement.lastElementChild;
+    }
   }
 };
 
