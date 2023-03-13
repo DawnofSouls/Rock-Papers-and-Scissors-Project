@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Earthbound";
+  src: url(assets/fonts/Year-Is-199X.woff);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#FadeOutScreen {
+  position: relative;
+  height: 100%;
+  background-color: black;
+  z-index: 20;
+}
+
+#ScreenDamage {
+}
+
+.imgbox {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  z-index: -10;
+}
+
+.imgbox,
+.center-fit,
+.Starman {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.center-fit {
+  width: auto;
+  height: 100%;
+  margin: auto;
+}
+
+.Starman {
+  height: 25%;
+  margin: auto;
+}
+
+.buttons {
+  display: flex;
+  gap: 131px;
+  justify-content: center;
+  align-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 5%;
+}
+
+.buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.ButtonSelect {
+  position: relative;
+  z-index: 2;
+}
+
+button {
+  border-radius: 0px;
+  background-image: url(assets/images/Checkerboard.gif);
+  background-size: 1378px 1275px;
+
+  padding: 7px 88px;
+  border: 4px solid white;
+  border-radius: 5px;
+
+  font-family: "Earthbound", sans-serif;
+  font-weight: lighter;
+  color: white;
+  font-size: 200px;
+
+  flex-shrink: 1;
+ 
+
+}
+
+#Scoreboard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.Score {
+  position: relative;
+  z-index: 11;
+}
+
+.Score {
+  color: azure;
+  font-size: 100px;
+  font-family: "Earthbound", sans-serif;
+  margin: 20px 2px -29px 50px;
+}

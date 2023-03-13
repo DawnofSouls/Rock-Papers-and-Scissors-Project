@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title> Rock Papers and Scissors, Rush!</title>
-        <script src="javascript.js"></script>
-    </head>
-        <body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rock Papers and Scissors, Rush!</title>
+    <script src="javascript.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://csshake.surge.sh/csshake.min.css"
+    />
+  </head>
+  <body>
+    <div id="FadeOutScreen"></div>
+    <div id="ScreenDamage"></div>
+    <div class="imgbox">
+      <video class="center-fit" muted autoplay loop>
+        <source src="assets/videos/VideoBackground.mp4" />
+        <img src="/assets/images/background.png" />
+      </video>
+      <img
+        id="StarmanPNG"
+        class="Starman"
+        src="assets/images/Enemy_GhostOfStarman.png"
+      />
+    </div>
 
-        </body>
+    <div id="Scoreboard">
+      <p id="HumanScore" class="Score">Human: 0</p>
+      <p id="StarmanScore" class="Score">Starman: 0</p>
+    </div>
+
+    <div class="buttons">
+      <button id="Rock" class="ButtonSelect" disabled>Rock</button>
+      <button id="Paper" class="ButtonSelect" disabled>Paper</button>
+      <button id="Scissors" class="ButtonSelect" disabled>Scissors</button>
+    </div>
+  </body>
 </html>

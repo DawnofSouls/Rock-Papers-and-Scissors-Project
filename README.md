@@ -1,7 +1,13 @@
-# Rock-Papers-and-Scissors-Project
-Remade Rocker Papers and Scissors using JS for The Odin Project
+# Rock Papers and Scissors vs Starman
+RPS game after discovering Earthbound and used it as a base inspiration. To replay the game, click anywhere on the screen couple seconds after you win or lose.
 
-# Project Date
-Started working on 2023 February 5 05:48PM PTD
-</br>
-Finished on 2023 February 6 7:30PM PTD
+Live preview:
+
+![GIF of website](https://user-images.githubusercontent.com/28073955/224612005-0287339c-130c-421b-b389-d446f1dd5a69.gif)
+
+
+Screenshot version:
+![Screenshot version](https://i.imgur.com/ha0PnIL.png)
+
+[▶ Live Demo](https://dawnofsouls.github.io/Rock-Papers-and-Scissors-Project/)
+
