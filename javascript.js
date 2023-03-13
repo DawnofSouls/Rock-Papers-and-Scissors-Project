@@ -93,11 +93,39 @@ let delExplosion = () => {
   }, 2000);
 };
 
+let YouWon = () => {
+  setTimeout(() => {
+    const body = document.querySelector("body");
+    const YouWinText = body.appendChild(document.createElement("p"));
+
+    YouWinText.setAttribute("id", "YouWinText");
+    YouWinText.textContent = "You won the game!";
+
+    let YouWinTextStyle = `
+    position: relative;
+    height:100vh;
+    margin: 0 auto;
+    color: azure;
+    font-size: 100px;
+    font-family: "Earthbound", sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    }`;
+
+    document.getElementById("YouWinText").style = YouWinTextStyle;
+    document.querySelector("body").setAttribute("onclick", "window.location.reload()");
+
+  }, 6000);
+};
+
 let finalScore = () => {
   if (playerScore > computerScore) {
     document.getElementById("StarmanPNG").src = "assets/images/explosion.gif";
     document.getElementById("StarmanPNG").style = "mix-blend-mode: screen";
     delExplosion();
+    YouWon();
   } else {
     let bodyelement = document.querySelector("body");
     let child = bodyelement.lastElementChild;
@@ -107,9 +135,7 @@ let finalScore = () => {
     }
     document.querySelector("body").style = BackgroundStyleText;
     setTimeout(() => {
-      document
-        .querySelector("body")
-        .setAttribute("onclick", "window.location.reload()");
+      document.querySelector("body").setAttribute("onclick", "window.location.reload()");
     }, 5000);
   }
 };
