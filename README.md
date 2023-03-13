@@ -7,5 +7,5 @@ Live preview:
 Screenshot version:
 ![Screenshot version](https://i.imgur.com/ha0PnIL.png)
 
-[▶ Live Preview](https://dawnofsouls.github.io/Rock-Papers-and-Scissors-Project/)
+[▶ Live Demo](https://dawnofsouls.github.io/Rock-Papers-and-Scissors-Project/)
 
