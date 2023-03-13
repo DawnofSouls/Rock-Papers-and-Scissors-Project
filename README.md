@@ -1,5 +1,5 @@
 # Rock Papers and Scissors vs Starman
-RPS game after discovering Earthbound and used it as a base inspiration
+RPS game after discovering Earthbound and used it as a base inspiration. To replay the game, click anywhere on the screen couple seconds after you win or lose.
 
 Live preview:
 
