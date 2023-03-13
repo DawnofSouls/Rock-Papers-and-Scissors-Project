@@ -117,7 +117,7 @@ let YouWon = () => {
     document.getElementById("YouWinText").style = YouWinTextStyle;
     document.querySelector("body").setAttribute("onclick", "window.location.reload()");
 
-  }, 6000);
+  }, 4500);
 };
 
 let finalScore = () => {
