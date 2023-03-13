@@ -87,10 +87,17 @@ background-repeat: repeat;
   min-height:100vh;
 `;
 
+let delExplosion = () => {
+  setTimeout(() => {
+    removeFadeOut(document.getElementById("StarmanPNG"), 2000);
+  }, 2000);
+};
+
 let finalScore = () => {
   if (playerScore > computerScore) {
     document.getElementById("StarmanPNG").src = "assets/images/explosion.gif";
     document.getElementById("StarmanPNG").style = "mix-blend-mode: screen";
+    delExplosion();
   } else {
     let bodyelement = document.querySelector("body");
     let child = bodyelement.lastElementChild;
