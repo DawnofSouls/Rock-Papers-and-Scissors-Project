@@ -90,6 +90,9 @@ button {
   font-size: 200px;
 
   flex-shrink: 1;
+  max-width: 440px;
+  
+
 }
 
 #Scoreboard {
