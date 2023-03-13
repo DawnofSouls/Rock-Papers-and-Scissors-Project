@@ -63,7 +63,8 @@ body {
 }
 
 .buttons {
-  position: absolute;t
+  position: absolute;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -90,8 +91,6 @@ button {
 
   flex-shrink: 1;
   max-width: 440px;
-  
-
 }
 
 #Scoreboard {
