@@ -80,7 +80,7 @@ let ScreenDamagePoint = () => {
   ScreenDamage.style = ScreenDamageStyle;
 };
 let BackgroundStyleText = `
-background-image: url(assets/images/You_lost.svg);
+background-image: url(./assets/images/You_lost.svg);
 background-repeat: repeat;
   background-position:0% 0%, 40px 40px;
   background-size:80px;
